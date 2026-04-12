@@ -2,17 +2,31 @@
 
 import { useState, type FormEvent } from "react";
 
+const FORMSPREE_ID = "mvzdpovq";
+
 export function Contact() {
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = e.currentTarget;
     const data = new FormData(form);
 
-    // TODO: hook up to an actual endpoint (Formspree, Supabase, etc.)
-    console.log("Form submitted:", Object.fromEntries(data));
-    setSubmitted(true);
+    try {
+      const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+        method: "POST",
+        body: data,
+        headers: { Accept: "application/json" },
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        setError(true);
+      }
+    } catch {
+      setError(true);
+    }
   }
 
   return (
