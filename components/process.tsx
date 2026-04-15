@@ -37,12 +37,8 @@ export function Process() {
         </h2>
 
         <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {steps.map((step, i) => (
+          {steps.map((step) => (
             <div key={step.number} className="relative">
-              {/* Connector line */}
-              {i < steps.length - 1 && (
-                <div className="absolute right-0 top-8 hidden h-px w-full translate-x-1/2 bg-card-border lg:block" />
-              )}
               <span className="text-4xl font-bold text-accent/20">
                 {step.number}
               </span>

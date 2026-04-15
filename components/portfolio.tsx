@@ -1,25 +1,21 @@
 const projects = [
   {
-    title: "Fresh Kitchen",
+    title: "Countd",
     description:
-      "Restaurant ordering app with menu browsing, loyalty rewards, and real-time order tracking.",
-    tags: ["Ordering", "Loyalty", "Push Notifications"],
-    // TODO: Add mockup images
-    mockups: [] as string[],
+      "A countdown app for iOS with checklists per event, custom backgrounds, home screen widgets, Live Activities, and calendar sync. Built with Flutter, monetized with RevenueCat subscriptions.",
+    tags: ["iOS", "Flutter", "Widgets", "Live Activities", "Subscriptions"],
+    mockups: ["/countd/home.jpg", "/countd/detail.png", "/countd/edit.png"],
   },
   {
     title: "CashBurned",
     description:
-      "Personal finance app with daily check-ins, streak tracking, insights, and home screen widgets.",
-    tags: ["iOS", "Widgets", "Gamification"],
-    mockups: [] as string[],
-  },
-  {
-    title: "Countd",
-    description:
-      "Countdown timer app with checklists, custom backgrounds, Live Activities, and calendar sync.",
-    tags: ["iOS", "Widgets", "Live Activities"],
-    mockups: [] as string[],
+      "Personal finance app with daily check-ins, spending insights, streak-based challenges, and home screen widgets. Built to make budgeting feel like a game.",
+    tags: ["iOS", "Widgets", "Gamification", "Insights"],
+    mockups: [
+      "/cashburned/home.webp",
+      "/cashburned/insights.webp",
+      "/cashburned/challenge.webp",
+    ],
   },
 ];
 
@@ -61,11 +57,22 @@ export function Portfolio() {
                   </div>
                 </div>
 
-                {/* Mockup placeholder */}
+                {/* Mockups */}
                 <div className="flex flex-1 items-center justify-center">
                   {project.mockups.length > 0 ? (
-                    // TODO: render actual mockup images
-                    <div />
+                    <div className="flex items-end justify-center gap-3 sm:gap-4">
+                      {project.mockups.map((src, idx) => (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img
+                          key={src}
+                          src={src}
+                          alt={`${project.title} screenshot ${idx + 1}`}
+                          className={`w-28 rounded-[1.5rem] border border-card-border shadow-2xl sm:w-36 md:w-40 ${
+                            idx === 1 ? "-translate-y-4" : ""
+                          }`}
+                        />
+                      ))}
+                    </div>
                   ) : (
                     <div className="flex h-80 w-full items-center justify-center rounded-xl border-2 border-dashed border-card-border text-sm text-muted">
                       Mockup coming soon
