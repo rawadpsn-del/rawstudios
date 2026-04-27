@@ -17,7 +17,7 @@ export default function TermsPage() {
       </Link>
 
       <h1 className="mt-10 text-4xl font-bold tracking-tight">Terms of Use</h1>
-      <p className="mt-3 text-sm text-muted">Last updated: April 14, 2026</p>
+      <p className="mt-3 text-sm text-muted">Last updated: April 24, 2026</p>
 
       <div className="prose prose-invert mt-10 space-y-6 text-base leading-relaxed text-foreground/90">
         <p>
@@ -142,19 +142,59 @@ export default function TermsPage() {
         </p>
 
         <h2 className="text-2xl font-semibold mt-10">
-          8. Limitation of Liability
+          8. Health, Medical, and Peptide Disclaimer (LeanLog)
+        </h2>
+        <p>
+          <strong>LeanLog is a logging tool, not a medical device, pharmacy,
+          marketplace, or healthcare provider.</strong> Raw Studios does not
+          recommend, endorse, prescribe, supply, or facilitate the purchase of
+          any compound, peptide, medication, or substance you log in the app.
+          Substances you choose to log — including but not limited to GLP-1
+          receptor agonists, growth hormone secretagogues, research peptides,
+          and other compounds — may be regulated, prescription-only,
+          experimental, or unapproved for human use in your jurisdiction.
+        </p>
+        <p>
+          You are solely responsible for: (a) determining the legality of any
+          substance you obtain, possess, or use in your jurisdiction; (b)
+          obtaining and following the advice of a licensed healthcare
+          professional before starting, modifying, or stopping any protocol;
+          (c) the safety, sourcing, dosage, purity, and storage of any
+          substance you use; and (d) any consequences resulting from your use
+          of substances you choose to track.
+        </p>
+        <p>
+          Raw Studios does not verify the accuracy of dosages, frequencies,
+          injection sites, side effects, or any other data you enter into the
+          app. Reminders, charts, projections, recon calculator outputs, and
+          any other generated content are informational and may contain
+          errors. They are not medical advice and must not be relied upon as
+          a substitute for professional medical judgment.
+        </p>
+        <p>
+          <strong>No doctor-patient or other professional relationship is
+          created by your use of the Services.</strong> If you experience any
+          adverse reaction, contact a licensed medical professional or
+          emergency services immediately.
+        </p>
+
+        <h2 className="text-2xl font-semibold mt-10">
+          9. Limitation of Liability
         </h2>
         <p>
           To the fullest extent permitted by law, Raw Studios shall not be
           liable for any indirect, incidental, special, consequential, or
           punitive damages arising out of or related to your use of the
-          Services. Raw Studios&apos; total liability shall not exceed the
-          amount you paid for the Services in the twelve months preceding the
-          claim.
+          Services. Raw Studios&apos; total aggregate liability shall not
+          exceed the greater of (a) the amount you paid for the Services in
+          the twelve months preceding the claim, or (b) one hundred U.S.
+          dollars (US $100). Nothing in these Terms limits liability for gross
+          negligence, willful misconduct, fraud, or any other liability that
+          cannot be excluded or limited under applicable law.
         </p>
 
         <h2 className="text-2xl font-semibold mt-10">
-          9. Termination
+          10. Termination
         </h2>
         <p>
           We may suspend or terminate your access to the Services at any time
@@ -164,7 +204,7 @@ export default function TermsPage() {
         </p>
 
         <h2 className="text-2xl font-semibold mt-10">
-          10. Changes to These Terms
+          11. Changes to These Terms
         </h2>
         <p>
           We may update these Terms from time to time. Material changes will
@@ -174,14 +214,80 @@ export default function TermsPage() {
         </p>
 
         <h2 className="text-2xl font-semibold mt-10">
-          11. Governing Law
+          12. Dispute Resolution; Binding Arbitration; Class Waiver
+        </h2>
+        <p>
+          <strong>Please read this Section carefully — it affects your legal
+          rights.</strong>
+        </p>
+        <p>
+          <strong>Informal resolution first.</strong> Before filing a claim,
+          you agree to attempt to resolve any dispute informally by contacting
+          us at{" "}
+          <a
+            href="mailto:outreach@rawstudios.info"
+            className="text-accent hover:underline"
+          >
+            outreach@rawstudios.info
+          </a>
+          . We will try to resolve disputes within 30 days of notice.
+        </p>
+        <p>
+          <strong>Binding individual arbitration.</strong> If informal
+          resolution fails, you and Raw Studios agree that any dispute, claim,
+          or controversy arising out of or relating to these Terms or the
+          Services shall be resolved by binding individual arbitration
+          administered by the American Arbitration Association (&quot;AAA&quot;)
+          under its Consumer Arbitration Rules. Judgment on the award may be
+          entered in any court having jurisdiction.
+        </p>
+        <p>
+          <strong>Class action waiver.</strong> You and Raw Studios each agree
+          that any dispute will be brought solely in your or our individual
+          capacity and not as a plaintiff or class member in any purported
+          class, collective, consolidated, or representative proceeding. The
+          arbitrator may not consolidate more than one person&apos;s claims
+          and may not preside over any form of representative or class
+          proceeding.
+        </p>
+        <p>
+          <strong>Small-claims carve-out.</strong> Either party may bring
+          qualifying claims in small-claims court instead of arbitration, so
+          long as the action remains in that court and proceeds only on an
+          individual (non-class) basis.
+        </p>
+        <p>
+          <strong>Opt-out.</strong> You may opt out of this arbitration
+          agreement by sending written notice to{" "}
+          <a
+            href="mailto:outreach@rawstudios.info"
+            className="text-accent hover:underline"
+          >
+            outreach@rawstudios.info
+          </a>{" "}
+          within 30 days of first accepting these Terms. Your opt-out notice
+          must include your name, the email used to access the Services, and
+          a clear statement that you wish to opt out of arbitration.
+        </p>
+        <p>
+          If any portion of this Section is found unenforceable, the
+          unenforceable portion shall be severed and the remainder shall
+          continue in full force.
+        </p>
+
+        <h2 className="text-2xl font-semibold mt-10">
+          13. Governing Law and Venue
         </h2>
         <p>
           These Terms are governed by the laws of the State of Ohio, United
-          States, without regard to its conflict of law provisions.
+          States, without regard to its conflict of law provisions. Subject to
+          Section 12 (Arbitration), any action not subject to arbitration
+          shall be brought exclusively in the state or federal courts located
+          in Summit County, Ohio, and you consent to the personal jurisdiction
+          of those courts.
         </p>
 
-        <h2 className="text-2xl font-semibold mt-10">12. Contact</h2>
+        <h2 className="text-2xl font-semibold mt-10">14. Contact</h2>
         <p>
           Questions about these Terms? Contact us at{" "}
           <a
